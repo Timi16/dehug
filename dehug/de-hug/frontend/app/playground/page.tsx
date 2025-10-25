@@ -102,7 +102,7 @@ const examplePrompts = {
   ],
 };
 
-const InferenceServer = process.env.NEXT_PUBLIC_INFERENCE_SERVER || "http://localhost:8000";
+const InferenceServer = process.env.NEXT_PUBLIC_INFERENCE_SERVER || "https://dehug-production.up.railway.app";
 
 export default function PlaygroundPage() {
   const [selectedModel, setSelectedModel] = useState<ModelCard | null>(null);

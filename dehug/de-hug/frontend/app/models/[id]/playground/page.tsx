@@ -36,7 +36,7 @@ import {PlaygroundInferenceService } from "@/lib/api";
 import ReactMarkdown from "react-markdown";
 
 const InferenceServer =
-  process.env.NEXT_PUBLIC_INFERENCE_SERVER || "http://localhost:8000";
+  process.env.NEXT_PUBLIC_INFERENCE_SERVER || "https://dehug-production.up.railway.app";
 
 export default function ModelPlaygroundPage() {
   const params = useParams();

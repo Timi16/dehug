@@ -20,13 +20,13 @@ const quickStartSteps = [
     description: "Access any model from our decentralized repository",
     code: `from dehug import DeHugRepository
 
-model = DeHugRepository.load_model("openai-community/gpt2-small")`,
+model = DeHugRepository.load_model("Your model hash")`,
     icon: Brain
   },
   {
     title: "Load a Dataset",
     description: "Access training data stored on IPFS",
-    code: `dataset = DeHugRepository.load_dataset("common-crawl/web-text")
+    code: `dataset = DeHugRepository.load_dataset("Your dataset hash")
 train_data = dataset["train"]`,
     icon: Database
   },
