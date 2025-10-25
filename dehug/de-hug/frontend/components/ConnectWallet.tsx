@@ -103,24 +103,14 @@ const ConnectWallet = ({ onConnect, label = "Connect Wallet" }: ConnectWalletPro
       {account && (
         <div className="hidden md:flex items-center gap-2">
           {isLoadingBasename ? (
-            <Badge variant="outline" className="border-slate-600 text-slate-400 bg-slate-900/50">
-              Loading...
-            </Badge>
-          ) : basename ? (
-            <Badge variant="outline" className="border-blue-600 text-blue-400 bg-blue-950/50">
-              {basename}
-            </Badge>
-          ) : (
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={openBasenameRegistration}
-              className="border-slate-600 text-slate-300 hover:bg-slate-800/50 hover:text-white font-light"
-            >
-              Get Basename
-              <ExternalLink className="h-3 w-3 ml-2" />
-            </Button>
-          )}
+                <Badge variant="outline" className="border-slate-600 text-slate-400 bg-slate-900/50">
+                  Loading...
+                </Badge>
+              ) : basename ? (
+                <Badge variant="outline" className="border-blue-600 text-blue-400 bg-blue-950/50">
+                  {basename}
+                </Badge>
+              ) : null}
         </div>
       )}
 
