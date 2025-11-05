@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create axios instance with base configuration
 const apiClient = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL || "https://dehug-production.up.railway.app",
+  baseURL: process.env.NEXT_PUBLIC_API_URL || "https://dehug-production-d951.up.railway.app",
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",
